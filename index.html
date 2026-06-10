@@ -1060,6 +1060,251 @@ footer{background:var(--bg2);border-top:1px solid var(--border);}
     padding:1rem;
   }
 }
+/* =========================
+   RESPONSIVE FIXES
+   ========================= */
+
+/* Tablet */
+@media (max-width: 992px){
+
+  section{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  /* Courses */
+  .courses-grid{
+    display:grid;
+    grid-template-columns:1fr !important;
+    gap:20px;
+  }
+
+  .course-card{
+    width:100%;
+  }
+
+  .course-card.course-ai{
+    grid-column:span 1 !important;
+  }
+
+  .course-tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+
+  .ctab{
+    flex:1 1 150px;
+    min-width:140px;
+  }
+  .course-card.course-ai{
+    grid-column:span 1 !important;
+  }
+
+  /* Contact */
+  .contact-grid,
+  .contact-wrap{
+    grid-template-columns:1fr !important;
+  }
+
+  .form-row{
+    flex-direction:column;
+  }
+
+  .form-row input{
+    width:100%;
+  }
+
+  /* About */
+  .about-inner{
+    grid-template-columns:1fr !important;
+    gap:2rem;
+  }
+
+  /* Team */
+  .team-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+
+  /* Services */
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  /* Footer */
+  .footer-top{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  html{
+    overflow-x:hidden;
+  }
+
+  body{
+    overflow-x:hidden;
+  }
+
+  section{
+    padding:70px 16px;
+  }
+
+  h1{
+    font-size:2.3rem !important;
+    line-height:1.2;
+  }
+
+  .section-title{
+    font-size:2rem !important;
+    text-align:center;
+  }
+
+  .section-sub{
+    text-align:center;
+  }
+
+  /* Hero */
+  .hero{
+    min-height:auto;
+    padding-top:120px;
+  }
+
+  .hero-btns{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .hero-btns a{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero-stats{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .stat{
+    width:100%;
+  }
+
+  /* Job Ready Courses */
+  .courses-grid{
+    grid-template-columns:1fr !important;
+    gap:16px;
+  }
+
+  .course-card{
+    padding:18px;
+  }
+
+  .course-card.course-ai{
+    grid-column:span 1 !important;
+  }
+
+  .course-card > div{
+    flex-direction:column !important;
+  }
+
+  .course-tabs{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .ctab{
+    width:100%;
+    margin:0;
+  }
+
+  /* Services */
+  .services-grid{
+    grid-template-columns:1fr;
+  }
+
+  .service-card{
+    padding:20px;
+  }
+
+  /* Team */
+  .team-grid{
+    grid-template-columns:1fr;
+  }
+
+  .team-card{
+    width:100%;
+  }
+
+  /* Contact */
+  .contact-grid,
+  .contact-wrap{
+    grid-template-columns:1fr !important;
+    gap:25px;
+  }
+
+  .contact-form{
+    width:100%;
+  }
+
+  .form-row{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .form-row input,
+  .contact-form select,
+  .contact-form textarea{
+    width:100%;
+  }
+
+  /* Footer */
+  .footer-top{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+
+/* Small Phones */
+@media (max-width:480px){
+
+  h1{
+    font-size:1.9rem !important;
+  }
+
+  .section-title{
+    font-size:1.7rem !important;
+  }
+
+  .hero-logo img{
+    max-width:160px;
+    height:auto;
+  }
+
+  .course-tabs{
+    grid-template-columns:1fr;
+  }
+
+  .ctab{
+    width:100%;
+  }
+
+  .course-card{
+    padding:16px;
+  }
+
+  .service-card{
+    padding:16px;
+  }
+
+  .contact-form{
+    padding:18px;
+  }
+}
 </style>
 </head>
 <body>
@@ -1200,7 +1445,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);}
     <button class="ctab" onclick="filterCourses('ai',this)">🤖 AI / ML</button>
   </div>
   <div class="courses-grid" id="coursesGrid">
-    <div class="course-card course-ai reveal" data-mode="ai online" style="grid-column:span 2;background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(255,107,0,.06));border-color:rgba(124,58,237,.35);">
+    <div class="course-card course-ai reveal" data-mode="ai online" style="grid-column:span 2;">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1.2rem;">
         <div style="flex:1;min-width:220px;">
           <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem;">
