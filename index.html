@@ -604,6 +604,47 @@ footer{background:var(--bg2);border-top:1px solid var(--border);}
   margin-top: 3.5rem;
 }
 
+/* Team Member Images */
+.team-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Increase avatar size for photos */
+.tc-avatar{
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Optional hover effect */
+.team-card:hover .team-img{
+  transform: scale(1.08);
+}
+
+.team-img{
+  transition: transform .4s ease;
+}
+.tc-avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.team-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 /* ── Team Card ── */
 .team-card {
   position: relative;
