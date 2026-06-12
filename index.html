@@ -16,16 +16,6 @@
   <div class="cursor-glow" id="cursorGlow"></div>
   <canvas id="particles"></canvas>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-close" onclick="closeMobile()">✕</div>
-    <div class="mobile-logo"><img src="data:image/png;base64,...your-logo..." alt="OKLABS"></div>
-    <a href="#services" onclick="closeMobile()">Services</a>
-    <a href="#institute" onclick="closeMobile()">Courses</a>
-    <a href="#about" onclick="closeMobile()">About</a>
-    <a href="#team" onclick="closeMobile()">Team</a>
-    <a href="#contact" onclick="closeMobile()">Contact</a>
-  </div>
 
   <!-- NAV -->
   <nav id="navbar">
@@ -199,7 +189,7 @@
       <button class="ctab" onclick="filterCourses('ai',this)">🤖 AI / ML</button>
     </div>
     <div class="courses-grid" id="coursesGrid">
-      <div class="course-card course-ai reveal" data-mode="ai online" style="grid-column:span 2;">
+      <div class="course-card course-ai reveal" data-mode="ai online" class="course-card course-ai reveal">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1.2rem;">
           <div style="flex:1;min-width:220px;">
             <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem;">

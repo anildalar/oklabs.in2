@@ -4146,3 +4146,372 @@ img.main-logo {
   width: 120px;
   height: auto;
 }
+
+
+
+/* ===== RESPONSIVE FIX PACK FOR OKLABS ===== */
+
+/* Prevent horizontal overflow */
+html,body{
+  overflow-x:hidden;
+  width:100%;
+}
+
+img,video,iframe{
+  max-width:100%;
+  height:auto;
+}
+
+/* Large tablets */
+@media (max-width:1024px){
+  .hero-stats{
+    flex-wrap:wrap;
+  }
+
+  .courses-grid,
+  .services-grid,
+  .why-grid,
+  .team-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+/* Tablets */
+@media (max-width:768px){
+  section{
+    padding:70px 20px !important;
+  }
+
+  .hero{
+    min-height:auto !important;
+    padding:110px 20px 60px !important;
+  }
+
+  .hero-logo img{
+    height:90px !important;
+  }
+
+  .hero-btns{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .btn-primary,
+  .btn-outline{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero-stats{
+    flex-direction:column !important;
+  }
+
+  .stat{
+    border-right:none !important;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+
+  .courses-grid,
+  .services-grid,
+  .why-grid,
+  .team-grid,
+  .footer-top,
+  .contact-grid,
+  .about-inner{
+    grid-template-columns:1fr !important;
+  }
+
+  .course-card,
+  .service-card{
+    padding:20px !important;
+  }
+
+  .course-foot{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .course-enroll{
+    width:100%;
+    text-align:center;
+  }
+
+  .course-tabs{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .ctab{
+    width:100%;
+    text-align:center;
+  }
+
+  table{
+    display:block;
+    overflow-x:auto;
+  }
+}
+
+/* Mobile phones */
+@media (max-width:480px){
+  h1{
+    font-size:2rem !important;
+    letter-spacing:-1px !important;
+  }
+
+  .section-title{
+    font-size:1.8rem !important;
+  }
+
+  .hero-sub{
+    font-size:.95rem !important;
+  }
+
+  .course-tabs{
+    grid-template-columns:1fr;
+  }
+
+  .course-card h3{
+    font-size:1rem !important;
+  }
+
+  .course-card p{
+    font-size:.85rem !important;
+  }
+
+  .nav-logo-img{
+    height:36px !important;
+  }
+
+  .online-banner,
+  .hero-stats{
+    border-radius:14px !important;
+  }
+}
+
+/* ===== JOB READY COURSES MOBILE FIX ===== */
+
+#coursesGrid,
+.courses-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    #coursesGrid,
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Mobile - One Card Per Row */
+@media (max-width: 768px) {
+    #coursesGrid,
+    .courses-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    #coursesGrid .course-card,
+    .courses-grid .course-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 980px) {
+    #coursesGrid,
+    .courses-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .course-card {
+        padding: 20px !important;
+    }
+}
+
+
+.course-card {
+    min-width: 420px;
+}
+
+
+
+
+/* =========================
+   JOB READY COURSES
+========================= */
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:24px;
+    width:100%;
+}
+
+.course-card{
+    width:100%;
+    min-width:0;
+    height:auto;
+}
+
+/* Laptop */
+@media (max-width:1200px){
+    .courses-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width:768px){
+    .courses-grid{
+        grid-template-columns:1fr !important;
+        gap:20px;
+    }
+
+    .course-card{
+        width:100% !important;
+        max-width:100% !important;
+        min-width:100% !important;
+        margin:0 !important;
+        padding:20px;
+    }
+
+    .course-card h3{
+        font-size:1.2rem;
+    }
+
+    .course-card p{
+        font-size:.95rem;
+        line-height:1.6;
+    }
+
+    .course-foot{
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        gap:12px;
+    }
+
+    .course-enroll{
+        width:100%;
+        text-align:center;
+    }
+}
+
+/* Small Phones */
+@media (max-width:480px){
+    .courses-grid{
+        grid-template-columns:1fr !important;
+        gap:16px;
+    }
+
+    .course-card{
+        padding:18px;
+        border-radius:20px;
+    }
+}
+
+
+.course-ai{
+    grid-column:span 2;
+}
+
+@media(max-width:768px){
+    .course-ai{
+        grid-column:span 1;
+    }
+}
+
+
+/* ===============================
+   JOB READY COURSES RESPONSIVE FIX
+================================= */
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+/* AI Featured Course */
+.course-ai{
+    grid-column:span 2;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+    .courses-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .course-ai{
+        grid-column:span 2;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .courses-grid{
+        grid-template-columns:1fr !important;
+        gap:20px !important;
+    }
+
+    .course-ai{
+        grid-column:span 1 !important;
+    }
+
+    .course-card{
+        width:100% !important;
+        max-width:100% !important;
+        min-width:0 !important;
+        margin:0 !important;
+    }
+
+    .course-card > div:first-child{
+        flex-direction:column !important;
+    }
+
+    .course-foot{
+        flex-direction:column;
+        gap:12px;
+        align-items:stretch;
+    }
+
+    .course-enroll{
+        width:100%;
+        text-align:center;
+    }
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+    .courses-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    .course-ai{
+        grid-column:span 1 !important;
+    }
+
+    .course-card{
+        padding:18px !important;
+    }
+
+    .course-card h3{
+        font-size:1.1rem;
+    }
+
+    .course-card p{
+        font-size:.9rem;
+    }
+}
